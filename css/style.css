@@ -1,0 +1,48 @@
+section{
+    width: 100%;
+    margin: 100px auto;
+}
+.parent-box{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 200px / 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+.child-box{
+    width: 100%;
+}
+.pic-1,
+.child-box:first-child{
+    background-color: blueviolet;
+}
+.pic-2,
+.child-box:nth-child(2){
+    background-color: chartreuse;
+}
+.pic-3,
+.child-box:last-child{
+    background-color: palevioletred;
+}
+.popup{
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: 500px / 40% 40%;
+    background-color: rgba(0, 0, 0, 0.199);
+}
+.popup-cont{
+    width: 100%;
+    height: 100%;
+    margin: 100px auto;
+}
+.popup-txt{
+
+    padding: 50px;
+    background-color: #ffff;
+}
